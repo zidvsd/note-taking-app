@@ -1,0 +1,12 @@
+/* Color Name Hex Usage Warm Yellow 
+#F4C542 Background / Primary accent Soft Ivory 
+#FDF7EC Paper / App background Graphite Gray 
+#3C3C3C Text / UI icons Pencil Orange 
+#F59E0B Secondary accent / Highlights Eraser 
+ #EF4444 Notifications / Error accents 
+   	/* #1F2937 / Deep Shadow Gray  */
+@import "tailwindcss";
+
+@theme {
+  --color
+}
