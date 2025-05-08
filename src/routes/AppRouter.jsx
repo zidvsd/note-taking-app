@@ -7,6 +7,7 @@ import {
   SettingsPage,
   SingleNotePage,
   NotFoundPage,
+  TrashPage,
 } from "../pages/index";
 import MainLayout from "../layout/MainLayout";
 const AppRouter = () => {
@@ -19,6 +20,7 @@ const AppRouter = () => {
           <Route path="settings" element={<SettingsPage />} />
           <Route path="add-note-page" element={<AddNotePage />} />
           <Route path="note/:id" element={<SingleNotePage />} />
+          <Route path="trash" element={<TrashPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

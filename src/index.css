@@ -1,16 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-warm-yellow: #F4C542;
-  --color-soft-ivory: #FDF7EC;
-  --color-graphite-gray: #3C3C3C;
-  --color-pencil-orange: #F59E0B;
-  --color-eraser-pink: #EF4444;
+  --color-warm-yellow: #f4c542;
+  --color-soft-ivory: #fdf7ec;
+  --color-graphite-gray: #3c3c3c;
+  --color-pencil-orange: #f59e0b;
+  --color-eraser-pink: #ef4444;
   --color-deep-gray: #1f2937;
-  --font-inter: 'Inter', 'sans-serif';
+  --font-inter: "Inter", "sans-serif";
 }
 
 .custom-container {
   @apply container mx-auto p-4 lg:p-6 max-w-[1440px];
+}
+
+.heading-text {
+  @apply font-bold font-inter;
+}
+
+.subheading-text {
+  @apply font-normal font-inter;
+}
+
+.hover-opacity {
+  @apply hover:opacity-70 transition-opacity ease-in-out duration-200
+}
+
+body {
+  @apply bg-soft-ivory font-inter;
 }
