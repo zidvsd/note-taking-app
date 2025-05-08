@@ -1,12 +1,16 @@
-/* Color Name Hex Usage Warm Yellow 
-#F4C542 Background / Primary accent Soft Ivory 
-#FDF7EC Paper / App background Graphite Gray 
-#3C3C3C Text / UI icons Pencil Orange 
-#F59E0B Secondary accent / Highlights Eraser 
- #EF4444 Notifications / Error accents 
-   	/* #1F2937 / Deep Shadow Gray  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color
+  --color-warm-yellow: #F4C542;
+  --color-soft-ivory: #FDF7EC;
+  --color-graphite-gray: #3C3C3C;
+  --color-pencil-orange: #F59E0B;
+  --color-eraser-pink: #EF4444;
+  --color-deep-gray: #1f2937;
+  --font-inter: 'Inter', 'sans-serif';
+}
+
+.custom-container {
+  @apply container mx-auto p-4 lg:p-6 max-w-[1440px];
 }
