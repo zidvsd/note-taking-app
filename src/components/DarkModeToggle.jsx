@@ -29,12 +29,12 @@ const DarkModeToggle = () => {
       {isDarkMode ? (
         <Moon
           onClick={toggleDarkMode}
-          className="text-black dark:text-white cursor-pointer size-5 md:size-7 hover-opacity  "
+          className="text-black dark:text-white cursor-pointer size-8 md:size-10 hover-opacity  "
         />
       ) : (
         <Sun
           onClick={toggleDarkMode}
-          className="text-black dark:text-white cursor-pointer size-5 md:size-7 hover-opacity"
+          className="text-black dark:text-white cursor-pointer size-8 md:size-10 hover-opacity"
         />
       )}
       <div

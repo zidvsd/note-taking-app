@@ -9,11 +9,11 @@ const MobileMenu = ({ className = "" }) => {
       className={`lg:hidden cursor-pointer text-warm-yellow relative ${className}`}
     >
       <MenuIcon
-        className="relative transition-transform transform hover:scale-110"
+        className="size-10 relative transition-transform transform hover:scale-110"
         onClick={() => setIsToggled(!isToggled)}
       />
       <ul
-        className={`text-warm-yellow text-sm absolute left-0 bg-white w-fit p-3 font-semibold rounded-md shadow-lg transition-all duration-300 ${isToggled ? "flex flex-col" : "hidden"}`}
+        className={`text-white text-xl w-32 absolute left-0 bg-warm-yellow  p-4 font-semibold rounded-md shadow-lg transition-all duration-300 ${isToggled ? "flex flex-col" : "hidden"}`}
       >
         <li className="hover:text-pencil-orange transition-colors mb-2">
           <Link onClick={() => setIsToggled(false)} to={"/"}>
