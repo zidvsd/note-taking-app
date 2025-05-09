@@ -11,6 +11,8 @@
   --font-inter: "Inter", "sans-serif";
 }
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 .custom-container {
   @apply container mx-auto p-4 lg:p-6 max-w-[1440px];
 }
@@ -27,6 +29,11 @@
   @apply hover:opacity-70 transition-opacity ease-in-out duration-200
 }
 
-body {
-  @apply bg-soft-ivory font-inter;
+[data-theme='light'] body {
+  @apply bg-soft-ivory font-inter
+  /* Dark mode background */
+}
+
+[data-theme='dark'] body {
+  @apply bg-graphite-gray
 }
